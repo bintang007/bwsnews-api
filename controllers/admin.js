@@ -19,7 +19,7 @@ module.exports = {
             res.status(403).json({message: 'Forbidden'})
         }
     },
-    register: async (req, res, next) => {
+    register: async (req, res, next) => {   
         const errors = validationResult(req);
         if (!errors.isEmpty()) return res.status(400).json({errors: errors.array()})
 
