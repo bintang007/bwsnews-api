@@ -8,7 +8,7 @@ const adminRoute = require('./routes/admin');
 
 const app = express()
 
-mongoose.connect('mongodb://localhost:27017/bwsnews-db', {
+mongoose.connect('mongodb+srv://admin:A23571113z@cluster0.puy0j.mongodb.net/bwsnews-db?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
